@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.upcoming-projects {
+    background-color: #ffffff;
+    color: #0a508d; /* Blue color */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Title of the section */
+.upcoming-projects h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1a73e8; /* Lighter blue */
+}
+
+/* Description text */
+.upcoming-projects p {
+    font-size: 18px;
+}
+
+/* Container for individual project cards */
+.project-list {
+    display: flex;
+    justify-content: center; /* Centralize the cards */
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Optional max-width for larger screens */
+}
+
+/* Style for each project card */
+.project {
+    width: 30%;
+    height: auto;
+    background-color: #1a73e8; /* Lighter blue background */
+    color: #ffffff; /* White text */
+    border-radius: 10px;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+/* Hover effect for the project cards */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Project title */
+.project h3 {
+    font-size: 22px;
+    
+}
+
+/* Project description */
+.project p {
+    font-size: 26px;
+  
+}
+
+.learn-more {
+    color: #f1c40f; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for the link */
+.learn-more:hover {
+    color: #0a508d; /* Blue color on hover */
+}
+
+@media (max-width: 768px) {
+    .upcoming-projects h2 {
+        font-size: 24px; /* Slightly smaller title */
+    }
+
+    .upcoming-projects p {
+        font-size: 16px; /* Slightly smaller text */
+    }
+
+    .project-list {
+        justify-content: center; /* Ensure cards are centered on mobile */
+    }
+
+    .project {
+        width: 80%; /* Cards take up more width on mobile */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .upcoming-projects h2 {
+        font-size: 20px; /* Even smaller title on smaller screens */
+    }
+
+    .upcoming-projects p {
+        font-size: 14px; /* Smaller description text */
+    }
+
+    .project {
+        width: 90%; /* Cards take up almost full width on very small screens */
+    }
+}
